@@ -3,18 +3,18 @@ function chiqar() {
         id: 1,
         name: "IT COMPANY"
     }
-    if (obj.id == Number) {
-        console.log(obj.id)
-    }
 
-    else if (obj.name == Number) {
-        console.log(obj.name)
-    }
+    let numValue = {}
 
-    else {
-        `object valuelarining raqamga tengi yo'q`
+    for (let key in obj) {
+        if (typeof obj[key] === "number") {
+            numValue[key] = obj[key]
+        }
     }
+    console.log(numValue)
 
 }
 
 chiqar()
+
+
