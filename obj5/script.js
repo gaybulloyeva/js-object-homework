@@ -14,7 +14,7 @@ function chiqar() {
             stringValue[key] = obj[key]
         }
     }
-    console.log(stringValue.valueOf())
+    console.log(Object.values(stringValue))
 
 }
 
